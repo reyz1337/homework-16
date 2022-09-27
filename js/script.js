@@ -47,14 +47,11 @@ document.addEventListener('DOMContentLoaded', () =>{
     alert(`Факторіал числа ${n} = ${factorial(n)}`);
 
 //5 Напиши функцію, яка приймає три окремі цифри і перетворює їх в одне число. Наприклад: цифри 1, 4, 9 перетворяться в число 149.
-    function str(){
-        let a = '2';
-        let b = '3';
-        let c = '5';
-        let numStr = a+b+c;
+    function str(a,b,c){
+        let numStr = a.toString() + b.toString() + c.toString();
         alert(numStr);
     }
-    str();
+    str(1,4,9);
 
 //6 Напиши функцію, яка приймає довжину і ширину прямокутника і обчислює його площу. Якщо в функцію передали 1 параметр, то вона обчислює площу квадрата.
     function square(a, b){
